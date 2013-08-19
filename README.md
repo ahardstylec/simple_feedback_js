@@ -1,6 +1,10 @@
 # SimpleFeedbackJs
 
-TODO: Write a gem description
+Simple Feedback js - Tiny Feedback library
+
+Simple Feedback is a tiny libraray that helps you to create feedback of your website. 
+When imported you can link the feedback process. 
+It goes through an feedback process to create a screenshot of the current page, makes commentary and rates the Website. Furthermore it sends this Feedback to an Central Server where Developers can Answer to it or review it to make this website more useful for the User.
 
 ## Installation
 
@@ -18,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add "//=require jquery-rails" to your javascript asset pipeline
+Add "//=require simple-feedback-js" to your javascript and stylesheet asset pipeline
+
 
 ## Contributing
 

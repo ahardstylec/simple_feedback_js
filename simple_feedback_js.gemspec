@@ -8,15 +8,16 @@ Gem::Specification.new do |spec|
   spec.version       = SimpleFeedbackJs::VERSION
   spec.authors       = ["ahardstylec"]
   spec.email         = ["andreas.collmann@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Simple Feedback js - Tiny Feedback library}
+  spec.summary       = %q{Simple Feedback is a tiny libraray that helps you to create feedback of your website. When imported you can link the feedback process. 
+                          It goes through an feedback process to create a screenshot of the current page, makes commentary and rates the Website. Furthermore it sends this feedback to an central Server where Developers can Answer to it or review it to make this website more useful for the User.}
+  spec.homepage      = "https://github.com/ahardstylec/simple_feedback_js"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.files         = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
   spec.require_paths = ["lib"]
+  spec.add_dependency("railties", "~> 3.1")
+  spec.add_dependency("jquery-rails")
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"

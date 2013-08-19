@@ -1,5 +1,8 @@
 require "simple_feedback_js/version"
 
 module SimpleFeedbackJs
-  # Your code goes here...
+	module Rails
+   	 class Engine < ::Rails::Engine
+   	 end
+  	end
 end
